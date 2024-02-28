@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Part 1</h1>
+    <!-- Assignment nom.1 -->
+    <Form action="test.py" method="post">
+        <div>
+            <label>Username</label><br>
+            <input  type="text"
+                    name="username" 
+                    required
+                    placeholder="Write your username here" 
+            >
+        </div>
+        <hr>
+        <div>
+            <label>Password</label><hr>
+            <input  type="password"
+                    name="pswd"
+                    placeholder="Write your password here"
+            >
+        </div>
+        <hr>
+        <div>
+            <label>Mobile</label><br>
+            <input  type="text"
+                    name="mobnum"
+                    pattern="[0-9]{3}\([0-9]{3}\)[0-9]+\+"
+                    title="Write something like that : 123(345)678900+"
+                    placeholder="Write your mobile number here"
+            >
+        </div>
+        <hr>
+        <div>
+            <label>Email</label><br>
+            <input  type="email" 
+                    name="email"
+                    required
+                    placeholder="Write your emeil here"
+            >
+        </div>
+        <hr>
+        <div>
+            <label>Subject</label><br>
+            <input  type="text"
+                    name="sbj"
+                    placeholder="Write the subject"
+            >
+        </div>
+        <hr>
+        <input  type="submit" 
+                value="Send Data"
+        >
+        <input  type="reset" 
+                value="Empty Form"
+        >
+        <div>
+            <input  type="hidden"
+                    name="token"
+                    value="#dasdasd5674^^^&LLL"
+            >
+        </div>
+        <!-- Asshignment nom.2 -->
+        <div>
+            <input  type="range" 
+                    max="500"
+                    min="100"  
+                    step="50" 
+                    value="100">
+        </div>
+    </Form>
+</body>
+</html>
